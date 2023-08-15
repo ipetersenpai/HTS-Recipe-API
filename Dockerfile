@@ -23,6 +23,8 @@ RUN python -m venv /py && \
          --no-create-home \
          django-user
 
-ENV PATH="py/bin:$PATH"
+# Set the PATH and PYTHONPATH environment variables
+ENV PATH="/py/bin:$PATH" \
+    PYTHONPATH="/py/lib/python3.9/site-packages:$PYTHONPATH"
 
 USER django-user
