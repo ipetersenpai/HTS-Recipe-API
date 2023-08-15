@@ -21,4 +21,4 @@ jobs:
         run: docker-compose run --rm app sh -c "python manage.py test"
       - name: Lint
         run: docker-compose --rm app sh -c "flake8"
-#configuration for the github action. This will run the test and linting on every push to the repository.
+#configuration for the github action. This will run the test and linting on every push to the repository..
